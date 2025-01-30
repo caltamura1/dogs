@@ -613,5 +613,17 @@ img {
 }
 
 @media (max-width: 500px){
+    .hero .hero-image {
+        max-height: 50%;
+        max-width: 50%;
+    }
+
+    .text-xxl {
+        font-size: 1.5rem;
+    }
+
+    .text-md {
+        font-size: .8rem;
+    }
     
 }
