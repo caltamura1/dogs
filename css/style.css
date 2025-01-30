@@ -70,24 +70,28 @@ img {
 
 /* Hero */
 .hero {
-    margin-bottom: 50px;
+    padding: 50px 20px;
 }
 
 .hero .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 100%;
-    padding: 0 40px;
+    gap: 30px;
+    flex-wrap: wrap; /* Allows items to wrap when screen is smaller */
 }
 
 .hero .hero-content {
-    max-width: 50%;
+    flex: 1;
+    max-width: 70%;
 }
 
 .hero .hero-image {
+    flex: 1;
     border-radius: 10px;
-    max-width: 40%;
+    max-width: 30%;
+    height: auto;
+    display: block;
 }
 
 .hero .hero-text {
@@ -174,7 +178,7 @@ img {
 }
 
 .faq ul.faq-menu {
-    max-width: 400px;
+    max-width: 600px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -213,11 +217,6 @@ img {
 .footer {
     padding: 40px 0;
 }
-
-/* .footer .footer-logo a {
-    justify-content: center;
-    align-items: center;
-} */
 
 .footer h4 {
     margin-bottom: 10px;
