@@ -44,11 +44,6 @@ img {
     align-items: center;
 }
 
-/* .navbar .logo {
-    max-width: 250px;
-    max-height: 40px;
-} */
-
 .navbar .main-menu ul {
     display: flex;
 }
@@ -90,7 +85,7 @@ img {
     flex: 1;
     border-radius: 10px;
     max-width: 30%;
-    height: auto;
+    /* height: auto; */
     display: block;
 }
 
