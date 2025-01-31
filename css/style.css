@@ -85,8 +85,9 @@ img {
     flex: 1;
     border-radius: 10px;
     max-width: 30%;
-    /* height: auto; */
-    display: block;
+    height: auto;
+    object-fit: contain;
+    /* display: block; */
 }
 
 .hero .hero-text {
@@ -609,8 +610,7 @@ img {
 
 @media (max-width: 500px){
     .hero .hero-image {
-        max-height: 50%;
-        max-width: 50%;
+        max-width: 70%;
     }
 
     .text-xxl {
