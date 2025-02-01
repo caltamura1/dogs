@@ -241,8 +241,13 @@ img {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-grid > div {
+    flex: 1;
+    min-width: 200px;
 }
 
 .footer .card {
@@ -606,19 +611,93 @@ img {
         flex-direction: column; /* Stack text & image */
         text-align: center; /* Center-align content */
     }
+
+    .footer-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .footer-grid > div {
+        flex: 1;
+        min-width: 45%; /* Makes Quick Links & Contact side by side */
+        text-align: center;
+    }
+
+    .footer-review {
+        flex: 1;
+        margin-top: 20px; /* Moves review section below */
+    }
 }
 
 @media (max-width: 500px){
     .hero .hero-image {
-        max-width: 70%;
+        max-width: 50%;
     }
 
     .text-xxl {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
+    }
+
+    .text-xl {
+        font-size: 1.4rem
+    }
+
+    .text-lg {
+        font-size: 1.2rem;
     }
 
     .text-md {
-        font-size: .8rem;
+        font-size: 1.0rem;
+    }
+
+    .photo-gallery {
+        padding: 10px 5px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    .testimonials {
+        padding: 5px 0;
+    }
+
+    .testimonials-heading {
+        margin-bottom: 0px;
+    }
+
+    .testimonials-grid {
+        padding-bottom: 30px;
+    }
+
+    .pricing {
+        padding: 10px 5px;
+    }
+
+    .features {
+        padding: 10px 5px;
+    }
+
+    .faq {
+        padding: 10px 5px;
+    }
+
+    .contact {
+        padding: 10px 5px;
+    }
+
+    .footer-grid {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-grid > div {
+        min-width: 100%;
+    }
+
+    .footer-review {
+        width: 100%;
     }
     
 }
