@@ -84,10 +84,10 @@ img {
 .hero .hero-image {
     flex: 1;
     border-radius: 10px;
-    max-width: 30%;
+    max-width: 40%;
     height: auto;
     object-fit: contain;
-    /* display: block; */
+    display: block;
 }
 
 .hero .hero-text {
@@ -612,9 +612,22 @@ img {
         display: block;
     }
 
+    .hero {
+        padding: 20px 10px; /* Reduce padding */
+    }
+
     .hero .container {
-        flex-direction: column; /* Stack text & image */
-        text-align: center; /* Center-align content */
+        flex-direction: column; /* Stack content */
+        text-align: center;
+    }
+
+    .hero .hero-content {
+        max-width: 100%; /* Full width on mobile */
+    }
+
+    .hero .hero-image {
+        max-width: 80%; /* Reduce image width for better fit */
+        margin-top: -20px; /* Adjust negative margin to remove excess space */
     }
 
     .footer-grid {
