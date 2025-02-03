@@ -652,6 +652,7 @@ img {
     .hero .hero-image {
         max-width: 60%;
         height: 100px;
+        overflow: hidden;
     }
 
     .text-xxl {
