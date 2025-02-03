@@ -237,12 +237,12 @@ img {
     margin-right: 10px;
 }
 
+
 .footer-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 1fr 1fr 2fr;
     gap: 20px;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    align-items: start;
 }
 
 .footer-grid > div {
@@ -259,6 +259,11 @@ img {
     padding: 10px;
     border: 1px solid lightgray;
     margin: 20px 0;
+}
+
+/* Make Review Section Stay on the Right */
+.footer-review {
+    grid-column: 3; /* Forces the "Leave a Review" section to be in the third column */
 }
 
 /* Utility Classes */
