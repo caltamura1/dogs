@@ -83,7 +83,7 @@ img {
 
 /* Style the image so it doesn't overflow */
 .hero-image {
-    max-width: 100%;          /* ensures the image is responsive */
+    max-width: 30%;          /* ensures the image is responsive */
     height: auto;             /* maintain aspect ratio */
 }
 
