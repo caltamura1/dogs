@@ -68,30 +68,23 @@ img {
     padding: 50px 20px;
 }
 
-.hero .container {
+/* Make the hero-content a flex container */
+.hero-content {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
-    flex-wrap: wrap; /* Allows items to wrap when screen is smaller */
+    align-items: center;      /* vertically center the items */
+    justify-content: space-between; /* add space between the text and image */
 }
 
-.hero .hero-content {
-    flex: 1;
-    max-width: 70%;
+/* Let the text container take up more space */
+.hero-text-container {
+    flex: 1;                  /* allow it to grow and fill available space */
+    margin-right: 20px;       /* add some space between the text and the image */
 }
 
-.hero .hero-image {
-    flex: 1;
-    border-radius: 10px;
-    max-width: 40%;
-    height: auto;
-    object-fit: contain;
-    display: block;
-}
-
-.hero .hero-text {
-    padding: 0 0 15px 0;
+/* Style the image so it doesn't overflow */
+.hero-image {
+    max-width: 100%;          /* ensures the image is responsive */
+    height: auto;             /* maintain aspect ratio */
 }
 
 /* Pricing */
@@ -616,18 +609,17 @@ img {
         padding: 20px 10px; /* Reduce padding */
     }
 
-    .hero .container {
-        flex-direction: column; /* Stack content */
-        text-align: center;
+    .hero-content {
+        flex-direction: column;
     }
-
-    .hero .hero-content {
-        max-width: 100%; /* Full width on mobile */
+      
+    .hero-text-container {
+        margin-right: 0;
+        margin-bottom: 20px;
     }
 
     .hero .hero-image {
         max-width: 80%; /* Reduce image width for better fit */
-        margin-top: -20px; /* Adjust negative margin to remove excess space */
     }
 
     .footer-grid {
@@ -651,8 +643,6 @@ img {
 @media (max-width: 500px){
     .hero .hero-image {
         max-width: 60%;
-        height: 100px;
-        overflow: hidden;
     }
 
     .text-xxl {
