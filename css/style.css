@@ -78,6 +78,7 @@ img {
 /* Let the text container take up more space */
 .hero-text-container {
     flex: 1;                  /* allow it to grow and fill available space */
+    max-width: 70%;
     margin-right: 20px;       /* add some space between the text and the image */
 }
 
@@ -619,7 +620,7 @@ img {
     }
 
     .hero .hero-image {
-        max-width: 80%; /* Reduce image width for better fit */
+        max-width: 60%; /* Reduce image width for better fit */
     }
 
     .footer-grid {
