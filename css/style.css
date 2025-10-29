@@ -82,24 +82,10 @@ img {
     margin-right: 20px;       /* add some space between the text and the image */
 }
 
-.hero-image-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
 /* Style the image so it doesn't overflow */
 .hero-image {
-    max-width: 30%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-.hero-location {
-    text-align: center;
-    font-weight: 500;
-    color: #555;
+    max-width: 30%;          /* ensures the image is responsive */
+    height: auto;             /* maintain aspect ratio */
 }
 
 /* Pricing */
