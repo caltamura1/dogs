@@ -375,7 +375,7 @@ img {
     flex-grow: 1; /* Allows text to take up space evenly */
 }
 
-.testimonials .testimonial-author p {
+.testimonials .card p:nth-child(2) {
     margin-top: 20px;
     font-weight: bold;
     text-align: right;
