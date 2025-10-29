@@ -375,11 +375,16 @@ img {
     flex-grow: 1; /* Allows text to take up space evenly */
 }
 
-.testimonials .card p:nth-child(2) {
+.testimonials .testimonial-author {
     margin-top: 20px;
     font-weight: bold;
-    text-align: right; /* Aligns the name at the bottom */
+    text-align: right;
+    align-self: flex-end;      /* Forces author to bottom */
+    margin-top: auto;          /* Pushes author text to bottom */
+    color: #444;
+    font-style: italic;
 }
+
 
 /* Contact Form */
 .contact-form-header {
