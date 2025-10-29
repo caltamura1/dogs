@@ -554,6 +554,9 @@ img {
     cursor: pointer;
     padding: 10px;
     z-index: 1000;
+    position: absolute;      /* changed from static */
+    top: 20px;               /* aligns vertically inside navbar */
+    right: 20px;             /* aligns right edge inside navbar */
 }
 
 .hamburger-button .hamburger-line {
