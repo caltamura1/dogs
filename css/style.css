@@ -554,9 +554,6 @@ img {
     cursor: pointer;
     padding: 10px;
     z-index: 1000;
-    position: absolute;      /* changed from static */
-    top: 20px;               /* aligns vertically inside navbar */
-    right: 20px;             /* aligns right edge inside navbar */
 }
 
 .hamburger-button .hamburger-line {
@@ -565,6 +562,9 @@ img {
     background: #333;
     margin: 6px 0;
 }
+
+/* Prevent body scroll when mobile menu is open */
+.no-scroll { overflow: hidden; }
 
 .mobile-menu {
     position: fixed;
